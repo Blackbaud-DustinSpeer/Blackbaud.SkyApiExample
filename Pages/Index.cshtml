@@ -1,0 +1,15 @@
+﻿@page
+@model IndexModel
+@inject Blackbaud.SkyApiExample.Services.IAuthenticationService _authService
+@{
+    ViewData["Title"] = "Example";
+}
+
+<div class="text-center">
+    <p>For more information about working with Blackbaud's SKY API, head to the <a href="https://developer.blackbaud.com/skyapi/" target="_blank">docs</a>.</p>
+    <p><a href="auth/login">Login</a></p>
+    <p><a href="auth/logout">Logout</a></p>
+    <p><a href="auth/refresh">Refresh</a></p>
+    <p>Authenticated: @_authService.IsAuthenticated()</p>
+    <p>@_authService.</p>
+</div>
